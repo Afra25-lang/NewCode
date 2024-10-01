@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript" src="./jquery.js"></script>
+</head>
+<body>
+
+    <input type="text" id="textname" ><br><br>
+    <input type="button" id="btnsubmit" value="Get Name">
+
+    <u1 id="ull">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+    </u1>
+    <button id="bttn">add button</button>
+    <button id="Select"> Select Even</button>
+    <button id="Remove">Remove Add</button>
+
+    
+
+    <script>
+        $(function(){
+            $("#bttn").click(function(){
+                var inputValue =$("#textname").val();
+                $("#ull ").append('<li>'+ inputValue + '</li>')
+            })
+        })
+        
+        $(function(){
+            $("#Select").click(function(){
+                $('#ull li:even').css('background-color','red')
+            })
+        })
+        $(function(){
+            $("#Remove").click(function(){
+                $('#ull li:odd').remove()
+            })
+        })
+        $("#btnsubmit").click(function(){
+        alert($("#textname").val());
+        })
+      
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       // var num1= prompt("enter a number")
+       // var num1= prompt("enter a another number")
+       // var sum= num1+ num2
+
+        //console.log(`"the sum of ${num1} and ${num2} is ${sum}"`)
+
+
+       // totalmark= Number(prompt("enter your number"))
+        //maxmark = Number(prompt("enter max number"))
+        //percentage=totalmark/maxmark*100
+
+        //console.log(`your percentage is ${percentage}`)
+
+        //x=Number(prompt("enter a x value"))
+
+        //if(x>1){
+          //  console.log("x is a positive number")
+        //}
+        //else if(x<0){
+          //  console.log("x is negative number")
+
+        //}
+        //else{
+         //   console.log("x is zero")
+        //}
+
+        //check the number even or ood
+
+        //x=Number(prompt(" enter a number"))
+        //if(x%2==0){
+        //    console.log("x is odd")
+        //}
+        //else{
+        //    console.log("x is even")
+        //}
+
+        //check whether a number is visible or divisible by both 5 and 7
+        //x=Number(prompt("enterv a x value"))
+        //if(x%5===0 && x%7===0){
+          //  console.log("x is divisible by both 5 and 7")
+        //}
+        //else if(x%5===0 && x%7!===0){
+         //   console.log("x is not divisible by both 5 and 7")
+        //}
+
+        //x= Number(prompt("enter  x value"))
+        //y=Number (prompt("enter y value"))
+        //if(x>y){
+           // console.log("x is largest")
+        //}else if(x<y){
+          //  console.log("y is largest")
+        //}
+
+        //x= Number(prompt("enter x value"))
+        //y= Number(prompt("enter y value"))
+        //z= Number(prompt("enter z value"))
+        //if(x>y && x>z){
+         //   console.log("x is largest")
+        //}
+        //else if(y>x && y>z){
+         //   console.log("y is largest")
+        //}
+        //else {
+        //    console.log("z is the largest number")
+        //}
+
+        //num = Number(prompt("enter a number"));
+        //var fact =1;
+        //while (num>0){
+         //   fact=fact*num;
+         //   num--;
+
+        //}
+        //console.log("factorial of ", num, "is", fact);
+
+
+        //limit = Number(prompt("enter a limit"));
+       // var a = 0
+       // var b = 1
+       // console.log(a);
+       // console.log(b);
+        //while(b<=limit){
+        //    var c = a + b;
+        //    console.log(c);
+        //    a = b;
+        //    b = a;
+       // }
+
+       // num = Number(prompt("enter a number"))
+       // var sum = 0;
+       // i=0
+       // while(i<=num){
+       //     if(i%2==0){
+       //         sum+=i
+
+       //     }
+        //    i++
+        //}
+        //console.log("sum of even numbers from 1 to ",num, "is", sum)
+
+        //base = Number(prompt("enter a base"));
+        //exponent=Number(prompt("enter the exponent"));
+       // var result=1;
+       // while(exponent>0){
+        //    result*=base;
+        //    exponent--
+
+       // }
+       // console.log(base,"raised to the power of",exponent,"is", result);
+
+        //find the number of digits in a number
+       // num = Number(prompt("enter the number"));
+        //temp=num
+       // var count=0
+       // while(num>0){
+       //   num= parseInt(num/10)
+       //   count++
+       // }
+       // console.log("number of digit in",temp,"is",count)
+
+
+        //find the sum of digit in a number
+        //num = Number(prompt("enter a number"))
+        //var sum =0
+        //while(num>0){
+        //  rem=num%10
+        //  sum+=rem
+        //  num= parseInt(num/10)
+        //}
+        //console.log("sum of digit in",temp,"is",sum)
+
+        
+        // find the largest digit in a number
+        num =Number(prompt("enter the number"));
+        temp=num
+        while(num>0){
+          rem=num%10
+          if(rem>largest){
+            largest=rem
+          }
+          num=parseInt(num/10)
+        }
+        console.log("the largest digit in",temp,"is",largest)
+
+        //reverse
+
+        num =Number(prompt("enter a number"))
+        var rev=0
+        while(num>0){
+          var rev=0
+          while(num>0){
+            rev=rev*10 + num%10
+            num=parseInt(num/10)
+          }
+          console.log("reversed number is",rev)
+        }
+
+
+
+        i=0
+        str=''
+        while(i<5){
+          j=0
+          while(j<5){
+            str="*"
+            j++
+          }
+          i++
+          str+='\n'
+        }
+        console.log(str)
+
+    //foor loop
+    // to print 1 to 10
+    for(var i=0; i<=10; i++){
+      console.log(i);
+    }
+
+    //to print 10 to 1
+    for(var i=0; i>=1; i--){
+      console.log("i")
+    }
+    //to print 1 t0 100 steps of 5
+    for(var i=0; i>=100; i+=5){
+      console.log(i);
+    }
+
+    for(var i=2; i>=100; i++){
+    }
+      var isprime = true;
+      for(var j=2 j>=100; j++)
+        if(i%j==0){
+          isprime = false
+          break;
+        }
+    }
+    if(isprime){
+      console.log(i);
+    }
+
+
+
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+
+
+      
+
+
+
+
+
+
+
+
+
+
+      
+
+        
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+
+
+
+         
+
+
+    
+
+        
+    </script>
+    
+</body>
+</html>

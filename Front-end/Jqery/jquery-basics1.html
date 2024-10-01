@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="./jquery.css">
+</head>
+<body>
+    <!-- <h2 >My Home</h2>
+    <p id="para1">my father is  abdhulla</p>
+    <p>my mother is sumayya</p>
+    <p class="para3">my brother is nasar</p>
+    <p class="para3">my sister is  afna</p>
+    <button id="btn">hide</button>
+    <button id="btn1">show</button>
+    <button id="btn2">toggle</button> -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <div>jquery project</div>
+    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident doloribus sint sed tempora rem,
+         magni possimus adipisci facere cum quae aut! Id quasi quibusdam illum expedita vel qui amet repellat?</div>
+
+    <h2 class="highlight">welcome to jquery</h2>
+    <h1 class="highlight">this is the first project</h1>
+
+    <p id="main">Lorem ipsum, dolor sit amet numquam optio ullam nobis ab. Itaque ad nam rerum.</p>
+    <button id="btnn">hide</button><br><br>
+
+    <input type="text">
+    <input type="text">
+    <input type="text">
+
+    <li>carrot</li>
+    <li>tomato</li>
+    <li>onion</li>
+    <li>chilly</li>
+    <table border="2">
+        <tr>
+            <th>roll no</th>
+            <th>Name</th>
+            <th>Mark</th>
+            <th>Percentage</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>mariya</td>
+            <td>67</td>
+            <td>50%</td>>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>anna</td>
+            <td>87</td>
+            <td>80%</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>mariya</td>
+            <td>67</td>
+            <td>50%</td>>
+        </tr>
+    </table>
+    <button >change</button><br><br><br>
+
+    <div>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis, neque enim ullam amet omnis<br>
+        doloremque ut dicta unde repellendus, natus quasi, beatae nemo sequi quod. Totam magnam corporis fuga blanditiis!</div><br><br><br>
+
+
+    <form>
+        <input type="text"><br>
+
+        <input type="text"><br>
+
+        <input type="email"><br>
+        <br>
+        <button>Submit</button>
+    </form>
+    <img src="./pexels-klaudia-rak-1198089-10388487.jpg" width="400" height="400">
+    <script>
+        // $(document).ready(function(){
+        //     $("h2").css("color", "red");
+        //     $("#para1").css("backgroundColor","green")
+        //     $("p").css("backgroundColor","green")
+        //     $(".para3").css("backgroundColor","yellow")
+        //     $(".para3").css("backgroundColor","yellow")
+        //     $("#btn").css("backgroundColor","red")
+        //     $("#btn1").css("backgroundColor","blue")
+        //     $("#btn2").css("backgroundColor","green")
+        //     $("#btn").css("width","100px")
+        //     $("#btn").css("height","40px")
+        //     $("#btn1").css("width","100px")
+        //     $("#btn1").css("height","40px")
+        //     $("#btn2").css("width","100px")
+        //     $("#btn2").css("height","40px")
+        //     $("#btn").click(
+        //         ()=>{
+        //             $("h2,p").hide()   
+        //         }
+        //     )
+        //     $("#btn1").click(
+        //         ()=>{
+        //             $("h2,p").show()
+  
+        //         }
+        //     )
+        //     $("#btn2").click(
+        //         ()=>{
+        //             $("h2,p").toggle()
+
+        //     / hlb  
+        //         }
+        //     )
+        // });/
+
+        $(document).ready(()=>{
+            $("div").css("backgroundColor","yellow")
+            $("div").css("width","600px")
+            $("div").css("height","100px")
+            $(".highlight").css("color","red")
+            $("#btnn").click(()=>{
+                $("#main").hide()
+
+            })
+            $("input[type='text']").attr("placeholder","Enter the text")
+            $("li:first").css("fontSize","20px")
+            $("tr:even").css("backgroundColor","gray")
+
+            $("button").click(()=>{
+                $("p").text("Hello world")
+            })
+            $("div").css("backgroundColor","yellow")
+
+            $("div").mouseenter(function(){
+                $(this).css("backgroundColor","green")
+            });
+
+            $("form").submit(function(){
+                alert("form submitted!")
+            })
+
+            $("li").click(function(){
+                $(this).text("clicked!");
+            })
+
+            $("input[type='text']").focus(function(){
+                $(this).css("border-color","blue")
+            })
+
+            $("img").dblclick(function(){
+                $(this).hide()
+            })
+
+
+
+
+
+
+
+
+
+
+        })
+
+        
+
+
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+html,body{
+    background: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+button{
+    padding: 15px 40px;
+    outline: 0;
+    border: 0;
+    color: #fff;
+    border-radius: 10px;
+
+
+}
+button::after{
+    content: "";
+    width: 400px;
+    height: 100px;
+    background: blue;
+}
